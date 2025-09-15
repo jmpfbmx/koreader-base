@@ -253,14 +253,14 @@ else ifeq ($(TARGET), cervantes)
 	USE_LJ_WPACLIENT=1
 else ifeq ($(TARGET), bookeen)
 	CHOST?=arm-pocketbook-linux-gnueabi
-	export BOOKEEN=1
+	BOOKEEN=1
 	HAS_POCKETBOOK_TC:=$(shell command -v arm-pocketbook-linux-gnueabi-gcc 2> /dev/null)
 	ifdef HAS_POCKETBOOK_TC
 		CHOST?=arm-pocketbook-linux-gnueabi
 	else
 		CHOST?=arm-linux-gnueabi
 	endif
-	export USE_LJ_WPACLIENT=1
+	USE_LJ_WPACLIENT=1
 else ifndef TARGET
 	# if TARGET is not defined we will build an emulator on current machine
 	EMULATE_READER=1
