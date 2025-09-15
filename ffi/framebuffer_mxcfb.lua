@@ -6,6 +6,8 @@ local C = ffi.C
 
 require("ffi/posix_h")
 
+local BB = require("ffi/blitbuffer")
+
 local band = bit.band
 local bor = bit.bor
 local bxor = bit.bxor
