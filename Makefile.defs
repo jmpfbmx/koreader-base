@@ -261,6 +261,7 @@ else ifeq ($(TARGET), bookeen)
 		CHOST?=arm-linux-gnueabi
 	endif
 	USE_LJ_WPACLIENT=1
+	GLIBC_VERSION_MAX = 2.11
 else ifndef TARGET
 	# if TARGET is not defined we will build an emulator on current machine
 	EMULATE_READER=1
