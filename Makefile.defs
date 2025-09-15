@@ -980,6 +980,7 @@ set(GLIBC_VERSION_MAX  $(GLIBC_VERSION_MAX))
 # Platform flags.
 set(ANDROID        $(ANDROID))
 set(APPIMAGE       $(APPIMAGE))
+set(BOOKEEN        $(BOOKEEN))
 set(CERVANTES      $(CERVANTES))
 set(DARWIN_AARCH64 $(DARWIN_AARCH64))
 set(KINDLE         $(KINDLE))

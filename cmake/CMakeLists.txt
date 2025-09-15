@@ -637,6 +637,14 @@ else()
 endif()
 ffi_target(remarkable mxcfb_remarkable_h.lua mxcfb_remarkable_decl.c ${EXCLUDE_FROM_ALL})
 
+# booken
+if(BOOKEEN)
+    set(EXCLUDE_FROM_ALL)
+else()
+    set(EXCLUDE_FROM_ALL EXCLUDE_FROM_ALL)
+endif()
+ffi_target(bookeen mxcfb_bookeen_h.lua mxcfb_bookeen_decl.c ${EXCLUDE_FROM_ALL})
+
 # sdl2
 ffi_target(sdl2 SDL2_0_h.lua SDL2_0_decl.c ARGS -d sdl2)
 
